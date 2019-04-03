@@ -11,7 +11,18 @@
         {{/if}}
 
         <main class="gh-main" role="main">
-            {{outlet}}
+            <div class="gh-outlet-container">
+                {{#if showNavMenu}}
+                    <div class="bb b--lightgrey pa5 pl7 pr7 flex justify-between items-center mb10">
+                        <div class="lightgrey-d2 flex items-center">{{svg-jar "search" class="w5 h5 fill-lightgrey-d2 mr2"}} <span class="f7">Search...</span></div>
+                        <div>
+                            <div class="w7 h7 br-pill bg-whitegrey"></div>
+                        </div>
+                    </div>
+                {{/if}}
+
+                {{outlet}}
+            </div>
         </main>
 
         {{gh-notifications}}

@@ -24,6 +24,10 @@
     max-height: 100%;
 }
 
+.gh-outlet-container {
+    flex-grow: 1;
+}
+
 .gh-main {
     position: relative;
     flex-grow: 1;
@@ -38,6 +42,13 @@
 .gh-main > section {
     width: 1px;
     position: relative; /* for the editor in safari */
+}
+
+/* Global top bar
+/* ---------------------------------------------------------- */
+.gh-top-bar {
+    padding: 32px;
+    border-bottom: 1px solid var(--lightgrey);
 }
 
 
