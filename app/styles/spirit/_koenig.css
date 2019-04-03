@@ -744,6 +744,7 @@
 /* Padded container housing title + editor canvas, scrollable content */
 .gh-koenig-editor-pane {
     padding: 11vw 92px;
+    background: var(--white);
 }
 
 @media (min-width: 500px) and (max-width: 960px) {

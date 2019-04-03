@@ -28,7 +28,7 @@
     position: relative;
     flex-grow: 1;
     display: flex;
-    background: #fff;
+    background: #F8FAFC;
     overflow-y: auto;
     /* prevent horizontal scroll in IE11 */
     overflow-x: hidden;
@@ -47,20 +47,30 @@
 .gh-nav {
     position: relative;
     z-index: 800;
-    flex: 0 0 312px;
+    flex: 0 0 280px;
     display: flex;
     flex-direction: column;
     min-width: 0; /* TODO: This is a bullshit Firefox hack */
-    background: color-mod(var(--lightgrey) l(+5%) s(-2%));
+    background: #FFF;
     transform: translateX(0);
     border-right: 1px solid var(--lightgrey);
+}
+
+.gh-nav-new-post {
+    padding: 0 48px;
+    margin-bottom: 32px;
+}
+
+.gh-nav-new-post .gh-btn {
+    width: 100%;
 }
 
 .gh-nav-menu {
     flex-shrink: 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: 24px;
+    padding: 48px 48px 32px;
     cursor: pointer;
     outline: none;
 }
@@ -89,11 +99,10 @@
 
 .gh-nav-menu-icon {
     flex-shrink: 0;
-    margin-right: 10px;
-    width: 32px;
-    height: 32px;
+    width: 44px;
+    height: 44px;
     background-color: transparent;
-    background-size: 32px;
+    background-size: 44px;
     border-radius: 4px;
 }
 
@@ -107,18 +116,20 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     line-height: 1.3em;
     font-weight: 600;
+    margin-top: 12px;
 }
 
 .gh-nav-menu-details-user {
     overflow: hidden;
-    color: var(--midgrey);
+    color: var(--midlightgrey);
     text-overflow: ellipsis;
     white-space: nowrap;
     font-size: 1.2rem;
     line-height: 1.2em;
+    margin-top: 4px;
 }
 
 .gh-nav-body {
@@ -182,53 +193,63 @@
 .gh-nav-list .gh-nav-list-h {
     overflow: hidden;
     margin-top: 32px;
-    padding: 10px 24px;
+    padding: 10px 48px;
     color:  color-mod(var(--darkgrey));
     text-overflow: ellipsis;
-    text-transform: uppercase;
     white-space: nowrap;
-    letter-spacing: 0.1em;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     line-height: 1.1em;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .gh-nav-list a {
     display: flex;
     align-items: center;
-    padding: 7px 24px;
-    color: color-mod(var(--midgrey) l(-10%) s(+5%));
+    padding: 11px 48px;
+    color: #92A0A6;
     opacity: 0.9;
     transition: none;
+    font-weight: 200;
 }
 
 .gh-nav-list .active {
-    background: color-mod(var(--lightgrey) l(-1%) s(-3%));
-    color: var(--darkgrey);
+    color: var(--blue);
     font-weight: 600;
     opacity: 1;
+    position: relative;
+}
+
+.gh-nav-list .active::before {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 4px;
+    display: block;
+    background: var(--blue);
+    top: 19px;
+    left: 24px;
+    border-radius: 100%;
 }
 
 .gh-nav-list a:not(.active):hover {
-    background: color-mod(var(--lightgrey) l(+2%) s(-2%));
     opacity: 1;
 }
 
 /* Icons */
 .gh-nav-list svg {
-    margin-right: 8px;
-    width: 16px;
-    height: 16px;
-    fill: color-mod(var(--midgrey) l(+5%));
+    margin-right: 16px;
+    width: 18px;
+    height: 18px;
+    fill: #9BAEB8;
     line-height: 1;
 }
 
 .gh-nav-list .active svg {
-    fill: color-mod(var(--blue) l(-3%) s(+3%));
+    fill: var(--blue);
 }
 
 .gh-nav-list svg g {
-    stroke: color-mod(var(--midgrey) l(+5%));
+    stroke: #9BAEB8;
 }
 
 .gh-nav-list .gh-nav-new-post {
@@ -309,9 +330,17 @@
     margin-top: 20px;
 }
 
-.gh-nav-labs {
-    margin-bottom: 20px;
-    padding: 0;
+.gh-nav-bottom {
+    padding: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gh-nav-bottom svg {
+    width: 18px;
+    height: 18px;
+    fill: #9BAEB8;
 }
 
 /* Mobile Nav Menu (Slides out)
