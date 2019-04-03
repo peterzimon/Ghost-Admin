@@ -127,10 +127,10 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     line-height: 1.3em;
     font-weight: 600;
-    margin-top: 12px;
+    margin-top: 16px;
 }
 
 .gh-nav-menu-details-user {
@@ -140,7 +140,7 @@
     white-space: nowrap;
     font-size: 1.2rem;
     line-height: 1.2em;
-    margin-top: 4px;
+    margin-top: 2px;
 }
 
 .gh-nav-body {
@@ -233,12 +233,12 @@
 .gh-nav-list .active::before {
     position: absolute;
     content: "";
-    width: 4px;
-    height: 4px;
+    width: 6px;
+    height: 6px;
     display: block;
     background: var(--blue);
-    top: 19px;
-    left: 24px;
+    top: 18px;
+    left: 23px;
     border-radius: 100%;
 }
 
@@ -533,7 +533,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 0 2vw 0;
+    margin: 0 0 2.1vw 0;
 }
 
 .gh-canvas-title {
@@ -544,7 +544,7 @@
     padding: 0;
     text-overflow: ellipsis;
     white-space: nowrap;
-    font-size: 2.9rem;
+    font-size: 3.2rem;
     line-height: 1.2em;
     font-weight: 700;
     letter-spacing: 0.4px;
