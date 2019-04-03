@@ -151,6 +151,40 @@ fieldset[disabled] .gh-btn {
     box-shadow: none;
 }
 
+
+/* Blue outline button
+/* ---------------------------------------------------------- */
+.gh-btn-blue-outline {
+    border: 1px solid var(--blue);
+    color: var(--blue);
+}
+
+.gh-btn-blue-outline:hover {
+    border-color: color-mod(var(--blue) l(+3%));
+}
+
+/* The background of the span is the main visual element */
+.gh-btn-blue span {
+    background: linear-gradient(
+    color-mod(var(--blue) whiteness(+5%)),
+    color-mod(var(--blue) l(-5%) saturation(-8%)) 60%,
+    color-mod(var(--blue) l(-5%) saturation(-8%)) 90%,
+    color-mod(var(--blue) l(-3%) saturation(-8%))
+    );
+    box-shadow: 0 1px 0 rgba(255,255,255,0.1) inset;
+}
+
+/* When clicked or focused with keyboard */
+.gh-btn-blue:active,
+.gh-btn-blue:focus {
+    background: color-mod(var(--blue) l(-20%) saturation(-15%));
+}
+.gh-btn-blue:active span,
+.gh-btn-blue:focus span {
+    background: color-mod(var(--blue) l(-7%) saturation(-10%));
+    box-shadow: none;
+}
+
 /* Green button
 /* ---------------------------------------------------------- */
 

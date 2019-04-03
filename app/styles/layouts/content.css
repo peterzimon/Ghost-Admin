@@ -117,7 +117,7 @@
 .gh-posts-list-item {
     position: relative;
     margin: 0;
-    padding: 24px 0 25px 0;
+    padding: 24px 0 25px;
     border-bottom: color-mod(var(--lightgrey)) 1px solid;
 }
 
@@ -127,7 +127,7 @@
 
 .gh-content-entry-title {
     margin: 0 0 3px 0;
-    font-size: 2.2rem;
+    font-size: 1.9rem;
     font-weight: 600;
     letter-spacing: 0.4px;
 }
@@ -137,15 +137,16 @@
 }
 
 .gh-posts-list-item p {
-    margin: 0;
-    font-size: 1.6rem;
+    margin: 4px 0 0;
+    font-size: 1.4rem;
     font-weight: 300;
+    color: var(--midgrey);
 }
 
 
 .gh-content-entry-meta {
-    margin: 10px 0 0 0;
-    font-size: 1.3rem;
+    margin: 6px 0 0 0;
+    font-size: 1.2rem;
     color: var(--midgrey);
     font-weight: 200;
     letter-spacing: 0.3px;
