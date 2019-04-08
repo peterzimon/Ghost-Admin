@@ -89,7 +89,7 @@
     <div class="gh-nav-bottom">
         {{#if (gh-user-can-admin session.user)}}
             {{#link-to "settings.general" data-test-nav="settings"}}{{svg-jar "settings"}}{{/link-to}}
-            {{#link-to "settings.labs" data-test-nav="labs"}}{{svg-jar "labs"}}{{/link-to}}
+            {{#link-to "v3-styles" data-test-nav="labs"}}{{svg-jar "labs"}}{{/link-to}}
         {{/if}}
         <button class="gh-nav-nightshift" title="Toggle Night shift" {{action (toggle "nightShift" this.feature)}}>
             <span>{{svg-jar "nightshift"}}</span>
