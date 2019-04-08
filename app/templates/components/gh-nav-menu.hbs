@@ -2,7 +2,6 @@
     {{#dropdown.trigger tagName="header" class="gh-nav-menu"}}
         <div class="gh-nav-menu-icon" style={{iconStyle}}></div>
         <div class="gh-nav-menu-details-blog">{{config.blogTitle}}</div>
-        <div class="gh-nav-menu-details-user">http://theblueprint.com</div>
     {{/dropdown.trigger}}
     {{#dropdown.content class="gh-nav-menu-dropdown"}}
         <ul class="dropdown-menu dropdown-triangle-top" role="menu" {{action dropdown.actions.close on="click" preventDefault=false}}>
@@ -35,10 +34,6 @@
 
 <section class="gh-nav-body">
     <div class="gh-nav-top">
-        <div class="gh-nav-new-post">
-            {{#link-to "editor.new" "post" class="gh-btn gh-btn-blue-outline gh-btn-icon" data-test-new-post-button=true}}<span class="nl2">{{svg-jar "add" class="fill-blue"}} New
-                post</span>{{/link-to}}
-        </div>
         <ul class="gh-nav-list gh-nav-main">
             <li {{action "transitionToOrRefreshSite" on="click"}}>
                 {{#link-to "site" data-test-nav="site" current-when=isOnSite preventDefault=false}}{{svg-jar "view-site-embed"}}View site{{/link-to}}
@@ -47,7 +42,7 @@
         <ul class="gh-nav-list gh-nav-manage">
             <li class="gh-nav-list-h">Manage</li>
             <li class="relative">
-                {{!-- {{#link-to "editor.new" "post" classNames="gh-nav-new-post" alt="New story" data-test-nav="new-story"}}<span>{{svg-jar "add-stroke"}}</span>{{/link-to}} --}}
+                {{#link-to "editor.new" "post" classNames="gh-nav-new-post" alt="New story" data-test-nav="new-story"}}<span>{{svg-jar "add-stroke"}}</span>{{/link-to}}
                 {{!-- clicking the Content link whilst on the content screen should reset the filter --}}
                 {{#if (eq router.currentRouteName "posts.index")}}
                     {{#link-to "posts" (query-params type=null author=null tag=null order=null) classNames="active" data-test-nav="posts"}}{{svg-jar "content"}}Posts{{/link-to}}
