@@ -231,7 +231,7 @@
     font-weight: 600;
     opacity: 1;
     position: relative;
-    background: color-mod(var(--darkgrey) alpha(0.08) s(+13%));
+    background: color-mod(var(--whitegrey) alpha(0.6));
 }
 
 .gh-nav-list a:not(.active):hover {
@@ -529,7 +529,7 @@
 
 .gh-canvas {
     flex-grow: 1;
-    padding: 24px 6vw 3vw 6vw;
+    padding: 4vw 6vw;
     margin: 0 auto;
     max-width: 1200px;
 }
