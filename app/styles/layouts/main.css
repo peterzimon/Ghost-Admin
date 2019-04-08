@@ -304,6 +304,14 @@
     stroke: var(--white);
 }
 
+.gh-nav-list .posts-active span svg path {
+    stroke: var(--darkgrey);
+}
+
+.gh-nav-list .posts-active span {
+    border-color: var(--darkgrey);
+}
+
 .gh-nav-list .gh-nav-nightshift {
     position: absolute;
     z-index: 999;
@@ -340,7 +348,7 @@
 }
 
 .gh-nav-bottom {
-    padding: 48px;
+    padding: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -521,7 +529,7 @@
 
 .gh-canvas {
     flex-grow: 1;
-    padding: 24px 4vw 3vw 4vw;
+    padding: 24px 6vw 3vw 6vw;
     margin: 0 auto;
     max-width: 1200px;
 }
