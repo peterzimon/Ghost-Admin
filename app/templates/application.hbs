@@ -11,20 +11,7 @@
         {{/if}}
 
         <main class="gh-main" role="main">
-            <div class="gh-outlet-container">
-                {{#if showNavMenu}}
-                    <div class="flex justify-between items-center ml8 mr8 pt8 pb8 bb b--lightgrey">
-                        <div class="midlightgrey-l1 fw1 flex items-center pa1 pl2 bg-white ba b--whitegrey br-pill" style="width: 280px;">{{svg-jar "search" class="w4 h4 fill-midlightgrey-l1 mr2"}} <span class="f7">Search site...</span></div>
-                        <div class="flex items-center">
-                            <div class="w9 h9 br-pill bg-purple white f6 fw6 flex items-center justify-center mr2">PZ</div>
-                            <span class="midgrey">Peter Zimon</span>
-                            {{svg-jar "arrow-down" class="nudge-top--2 ml2 w2 h2"}}
-                        </div>
-                    </div>
-                {{/if}}
-
-                {{outlet}}
-            </div>
+            {{outlet}}
         </main>
 
         {{gh-notifications}}

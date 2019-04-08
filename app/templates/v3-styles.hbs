@@ -1,0 +1,211 @@
+<div class="flex-auto relative">
+    
+    {{!-- Top bar --}}
+    
+    <div class="flex justify-between items-center ml8 mr8 pt8 pb8 bb b--lightgrey sticky top-0 left-0 right-0 top-bar-background">
+        <div class="midlightgrey-l1 fw1 flex items-center pa1 pl2 bg-white ba b--lightgrey br-pill" style="width: 280px;">
+            {{svg-jar "search" class="w4 h4 fill-midlightgrey-l1 mr2"}} <span class="f7">Search site...</span></div>
+        <div class="flex items-center">
+            <div class="w8 h8 br-pill bg-midgrey white f7 fw6 flex items-center justify-center mr2">PZ</div>
+            <span class="midgrey">Peter Zimon</span>
+            {{svg-jar "arrow-down" class="nudge-top--2 ml2 w2 h2"}}
+        </div>
+    </div>
+
+    <section class="v3-canvas">
+        
+        {{!-- Dummy posts --}}
+
+        <div class="flex items-center justify-between">
+            <h1>Posts</h1>
+            <button class="v3-btn v3-btn-cyan"><span>New post</span></button>
+        </div>
+        <div class="bg-white br3 ba b--whitegrey shadow-1 mt8 midgrey">
+            <div class="bg-whitegrey pa2 pl8 pr8 flex items-center midgrey">
+                <div class="mr7 flex items-center">
+                    <span class="fw5 f8">All posts</span>
+                    {{svg-jar "arrow-down" class="ml1 w2 h2"}}
+                </div>
+                <div class="mr7 flex items-center">
+                    <span class="fw5 f8">All authors</span>
+                    {{svg-jar "arrow-down" class="ml1 w2 h2"}}
+                </div>
+                <div class="mr7 flex items-center">
+                    <span class="fw5 f8">All tags</span>
+                    {{svg-jar "arrow-down" class="ml1 w2 h2"}}
+                </div>
+            </div>
+            <div class="pa8 bb b--whitegrey">
+                <a class="ma0 pa0 f5 fw6 darkgrey">Delivering Kisses And Miracles</a>
+                <p class="ma0 pa0 midgrey f7">The cast brass and cast stainless steel burners have the smallest burrs — by far. This will mean less chaos...</p>
+                <p class="ma0 pa0 mt3 f8 midlightgrey">Published by Pin Jung-Eum at March 29th • 309 words</p>
+            </div>
+            <div class="pa8 bb b--whitegrey">
+                <h3 class="ma0 pa0 f5 fw6 darkgrey">Smarter Food Choices 101 Tips For Busy Women</h3>
+                <p class="ma0 pa0 midgrey f7">You invest a lot of time and money into the steaks for a special occasion and when dinner time comes, they are...</p>
+                <p class="ma0 pa0 mt3 f8 midlightgrey">Published by Pin Jung-Eum at March 29th • 309 words</p>
+            </div>
+            <div class="pa8">
+                <h3 class="ma0 pa0 f5 fw6 darkgrey">Keep That Cooking Area Clean</h3>
+                <p class="ma0 pa0 midgrey f7">When it comes to cooking there are few tools that are more versatile in the kitchen than the microwave. This…</p>
+                <p class="ma0 pa0 mt3 f8 midlightgrey">Published by Pin Jung-Eum at March 29th • 309 words</p>
+            </div>
+        </div>
+
+
+        <hr class="section-divider" />
+
+
+        {{!-- Dummy members --}}
+        
+        <div class="flex items-center justify-between">
+            <h1>Members</h1>
+            <div class="flex items-center">
+                <button class="v3-btn mr2"><span>Actions</span></button>
+                <button class="v3-btn v3-btn-cyan"><span>New member</span></button>
+            </div>
+        </div>
+        <h2 class="mt8 f8 ttu midgrey tracked-4 fw5">Active members (5)</h2>
+        <div class="bg-white br3 ba b--whitegrey shadow-1 mt3 midgrey">
+            <div class="pa8 bb b--whitegrey">
+                <input type="text" class="v3-input" placeholder="Search members...">
+            </div>
+            <div class="pa8 pt6 pb6 bb b--whitegrey">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <div class="w9 h9 br-pill bg-green white f7 fw6 flex items-center justify-center mr2">SK</div>
+                        <div>
+                            <p class="ma0 pa0 darkgrey f6 fw5 lh-solid">Shawn Kemp</p>
+                            <p class="ma0 pa0 mt1 midlightgrey f8 lh-solid">shawn.kemp@gmail.com</p>
+                        </div>
+                    </div>
+                    {{svg-jar "arrow-right" class="w4 h4 fill-midlightgrey"}}
+                </div>
+            </div>
+            <div class="pa8 pt6 pb6 bb b--whitegrey">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <div class="w9 h9 br-pill bg-purple white f7 fw6 flex items-center justify-center mr2">CB</div>
+                        <div>
+                            <p class="ma0 pa0 darkgrey f6 fw5 lh-solid">Charles Barkley</p>
+                            <p class="ma0 pa0 mt1 midlightgrey f8 lh-solid">charles@gmail.com</p>
+                        </div>
+                    </div>
+                    {{svg-jar "arrow-right" class="w4 h4 fill-midlightgrey"}}
+                </div>
+            </div>
+            <div class="pa8 pt6 pb6 bb b--whitegrey">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <div class="w9 h9 br-pill bg-red white f7 fw6 flex items-center justify-center mr2">EG</div>
+                        <div>
+                            <p class="ma0 pa0 darkgrey f6 fw5 lh-solid">Eric Gordon</p>
+                            <p class="ma0 pa0 mt1 midlightgrey f8 lh-solid">eric@gmail.com</p>
+                        </div>
+                    </div>
+                    {{svg-jar "arrow-right" class="w4 h4 fill-midlightgrey"}}
+                </div>
+            </div>
+            <div class="pa8 pt6 pb6 bb b--whitegrey">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <div class="w9 h9 br-pill bg-midgrey white f7 fw6 flex items-center justify-center mr2">BB</div>
+                        <div>
+                            <p class="ma0 pa0 darkgrey f6 fw5 lh-solid">Bradley Beal</p>
+                            <p class="ma0 pa0 mt1 midlightgrey f8 lh-solid">bradley@gmail.com</p>
+                        </div>
+                    </div>
+                    {{svg-jar "arrow-right" class="w4 h4 fill-midlightgrey"}}
+                </div>
+            </div>
+            <div class="pa8 pt6 pb6">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <div class="w9 h9 br-pill bg-yellow white f7 fw6 flex items-center justify-center mr2">EP</div>
+                        <div>
+                            <p class="ma0 pa0 darkgrey f6 fw5 lh-solid">Enrico Palazzo</p>
+                            <p class="ma0 pa0 mt1 midlightgrey f8 lh-solid">palazzo@gmail.com</p>
+                        </div>
+                    </div>
+                    {{svg-jar "arrow-right" class="w4 h4 fill-midlightgrey"}}
+                </div>
+            </div>
+        </div>
+
+
+        <hr class="section-divider" />
+        
+        {{!-- Fake settings --}}
+        
+        <h1><span class="fw3 midgrey">Settings /</span> General</h1>
+
+        <h2 class="mt8 f8 ttu midgrey tracked-4 fw5">Publication info</h2>
+        <div class="bg-white br3 ba b--whitegrey shadow-1 mt3 midgrey">
+            <div class="pa8 bb b--whitegrey">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h3 class="ma0 pa0 f5 fw6 darkgrey">Title & description</h3>
+                        <p class="ma0 pa0 midgrey f7">The details used to identify your publication around the web</p>
+                    </div>
+                    <button class="v3-btn"><span>Close</span></button>
+                </div>
+                <div class="mt5 bt b--whitegrey pt6">
+                    <h4 class="f7">Site title</h4>
+                    <input type="text" class="v3-input settings-input" value="The Blueprint">
+
+                    <h4 class="f7 mt6">Site description <span class="fw4 midlightgrey">• Used in your theme, meta data and search results</span></h4>
+                    <input type="text" class="v3-input settings-input" value="The Blueprint">
+
+                    <button class="v3-btn mt6 v3-btn-blue"><span>Save</span></button>
+                </div>
+            </div>
+            <div class="pa8 bb b--whitegrey">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h3 class="ma0 pa0 f5 fw6 darkgrey">Site timezone</h3>
+                        <p class="ma0 pa0 midgrey f7">Set the time and date of your publication, used for all published posts</p>
+                    </div>
+                    <button class="v3-btn"><span>Expand</span></button>
+                </div>
+            </div>
+            <div class="pa8">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h3 class="ma0 pa0 f5 fw6 darkgrey">Publication language</h3>
+                        <p class="ma0 pa0 midgrey f7">Set the language/locale which is used on your site</p>
+                    </div>
+                    <button class="v3-btn"><span>Expand</span></button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <hr class="section-divider" />
+
+
+        <h1>UI style</h1>
+
+        <h2 class="mt10 f8 ttu midgrey tracked-4 fw5">Buttons</h2>
+
+        <div class="mt3 bt pa8 b--whitegrey flex items-center justify-center">
+            <button class="v3-btn mr2"><span>Default</span></button>
+            <button class="v3-btn mr2 v3-btn-blue"><span>Save post</span></button>
+            <button class="v3-btn mr2 v3-btn-cyan"><span>New post</span></button>
+            <button class="v3-btn mr2 v3-btn-green"><span>Looks good!</span></button>
+            <button class="v3-btn mr2 v3-btn-red"><span>Delete post</span></button>
+            <button class="v3-btn mr2 v3-btn-black"><span>Done</span></button>
+        </div>
+
+        <div class="bg-white br3 ba b--whitegrey pa8 shadow-1 mt3 lightgrey flex items-center justify-center">
+            <button class="v3-btn mr2"><span>Default</span></button>
+            <button class="v3-btn mr2 v3-btn-blue"><span>Save post</span></button>
+            <button class="v3-btn mr2 v3-btn-cyan"><span>New post</span></button>
+            <button class="v3-btn mr2 v3-btn-green"><span>Looks good!</span></button>
+            <button class="v3-btn mr2 v3-btn-red"><span>Delete post</span></button>
+            <button class="v3-btn mr2 v3-btn-black"><span>Done</span></button>
+        </div>
+
+    </section>
+</div>
