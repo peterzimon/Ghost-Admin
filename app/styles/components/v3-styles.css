@@ -5,7 +5,7 @@
 
 :root {
     /* Base colors */
-    --cyan: #38d8c0;
+    --teal: #38d8c0;
     --v3-green: #50d838;
     --v3-red: #d73850;
 }
@@ -39,6 +39,7 @@
     transition: all 0.2s ease;
     transition-property: color, border-color, background, width, height;
     background: linear-gradient(var(--white), color-mod(var(--lightgrey) l(+1%) s(-7%)));
+    min-width: 60px;
 
     -webkit-font-smoothing: subpixel-antialiased;
 }
@@ -84,9 +85,14 @@ fieldset[disabled] .v3-btn {
     color: var(--blue);
 }
 
+.v3-btn-hover-teal:hover {
+    border-color: var(--teal);
+    color: var(--teal);
+}
+
 .v3-btn-hover-green:hover {
-    border-color: var(--v3-green);
-    color: var(--v3-green);
+    border-color: color-mod(var(--v3-green) l(-10%) s(+5%));
+    color: color-mod(var(--v3-green) l(-10%) s(+5%));
 }
 
 .v3-btn-hover-red:hover {
@@ -95,13 +101,12 @@ fieldset[disabled] .v3-btn {
 }
 
 
-/* Grey button - First so that other colors will override
+/* Ghost button - First so that other colors will override
 /* ---------------------------------------------------------- */
 
 /* Instead we should have an outline/ghost button if there's a use case for it */
 
 /* TO BE DONE */
-
 
 
 /* Blue button
@@ -140,30 +145,30 @@ fieldset[disabled] .v3-btn {
 /* Cyan button
 /* ---------------------------------------------------------- */
 
-.v3-btn-cyan {
+.v3-btn-teal {
     padding: 1px;
     color: #fff;
     background: linear-gradient(
-    color-mod(var(--cyan) l(+10%) ),
-    color-mod(var(--cyan) l(-9%) s(+2%))
+    color-mod(var(--teal) l(+10%) ),
+    color-mod(var(--teal) l(-9%) s(+2%))
     );
     fill: #fff;
     border: none;
     transition: none !important;
 }
 
-.v3-btn-cyan span {
+.v3-btn-teal span {
     background: none;
 }
 
 /* When clicked or focused with keyboard */
-.v3-btn-cyan:active,
-.v3-btn-cyan:focus {
-    background: color-mod(var(--cyan) l(-20%) saturation(-15%));
+.v3-btn-teal:active,
+.v3-btn-teal:focus {
+    background: color-mod(var(--teal) l(-20%) saturation(-15%));
 }
-.v3-btn-cyan:active span,
-.v3-btn-cyan:focus span {
-    background: color-mod(var(--cyan) l(-7%) saturation(-10%));
+.v3-btn-teal:active span,
+.v3-btn-teal:focus span {
+    background: color-mod(var(--teal) l(-7%) saturation(-10%));
     box-shadow: none;
 }
 
@@ -293,7 +298,7 @@ fieldset[disabled] .v3-btn {
     width: 1em;
     height: 1em;
     margin-right: 0.5em;
-    fill: #fff;
+    fill: var(--middarkgrey);
 }
 
 .v3-btn-icon svg.gh-spinner {
@@ -311,7 +316,7 @@ svg.v3-btn-icon-right {
 }
 
 .v3-btn-icon svg path {
-    stroke: #fff;
+    stroke: var(--middarkgrey);
 }
 
 .v3-btn-icon-no-margin {
