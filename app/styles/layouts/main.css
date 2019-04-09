@@ -246,8 +246,8 @@
 /* Icons */
 .gh-nav-list svg {
     margin-right: 16px;
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
     fill: var(--midlightgrey);
     line-height: 1;
 }
@@ -266,12 +266,12 @@
     padding: 6px;
     margin: 0;
     right: 27px;
-    top: 5px;
+    top: 3px;
 }
 
 .gh-nav-list .gh-nav-new-post span {
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     border: 1.4px solid var(--midlightgrey);
     border-radius: 100%;
     display: flex;
@@ -355,8 +355,8 @@
 }
 
 .gh-nav-bottom svg {
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
     fill: #9BAEB8;
 }
 

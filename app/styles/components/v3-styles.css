@@ -10,6 +10,10 @@
     --v3-red: #d73850;
 }
 
+.f-h1 {
+    font-size: 3.2rem;
+}
+
 
 .tracked-4 {
     letter-spacing: 0.12rem;
@@ -443,7 +447,7 @@ select:focus {
 .v3-canvas {
     flex-grow: 1;
     margin: 0 auto;
-    padding: 4vw 6vw;
+    padding: 2.5vw 6vw;
     max-width: 1200px;
 }
 
