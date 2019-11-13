@@ -17,12 +17,21 @@ export default Component.extend({
     isDraft: equal('post.status', 'draft'),
     isPublished: equal('post.status', 'published'),
     isScheduled: equal('post.status', 'scheduled'),
-    primaryTag: alias('post.primary_tag'),
 
     authorNames: computed('post.authors.[]', function () {
         let authors = this.get('post.authors');
 
         return authors.map(author => author.get('name') || author.get('email')).join(', ');
+    }),
+
+    primaryTag: computed('post.tags.[]', function () {
+        let primaryTag = this.get('post.tags.firstObject');
+        
+        if (primaryTag) {
+            return primaryTag.get('name');
+        }
+        
+        return false;
     }),
 
     subText: computed('post.{excerpt,customExcerpt,metaDescription}', function () {
