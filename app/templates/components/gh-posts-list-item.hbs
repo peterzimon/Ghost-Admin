@@ -1,6 +1,6 @@
 {{#link-to "editor.edit" this.post.displayName this.post.id class="permalink gh-list-data gh-post-list-featured" title="Edit this post"}}
 {{#if this.isFeatured}}
-<span data-tooltip="Featured" class="dib pl1 pr1 nr1 nl1">{{svg-jar "star-filled" class="fill-blue w3 h3"}}</span>
+    <span data-tooltip="Featured" class="dib pl1 pr1 nr1 nl1">{{svg-jar "star-filled" class="fill-blue w3 h3"}}</span>
 {{/if}}
 {{/link-to}}
 
@@ -17,20 +17,20 @@
     </span>
 </p>
 {{#if isScheduled}}
-<p>
-    <span class="gh-schedule-time">Scheduled to be published and sent
-        {{gh-format-post-time this.post.publishedAtUTC scheduled=true}}</span> <span class="midlightgrey">–
-        {{this.subText}}</span>
-</p>
+    <p>
+        <span class="gh-schedule-time">Scheduled to be published and sent
+            {{gh-format-post-time this.post.publishedAtUTC scheduled=true}}</span> <span class="midlightgrey">–
+            {{this.subText}}</span>
+    </p>
 {{else}}
-<p>
-    <span class="midlightgrey">{{this.subText}}</span>
-</p>
+    <p>
+        <span class="midlightgrey">{{this.subText}}</span>
+    </p>
 {{/if}}
 {{/link-to}}
 
 {{#link-to "editor.edit" this.post.displayName this.post.id class="permalink gh-list-data gh-post-list-updated" title="Edit this post"}}
-<span class="nowrap">{{gh-format-post-time this.post.updatedAtUTC draft=true}}</span>
+    <span class="nowrap">{{gh-format-post-time this.post.updatedAtUTC draft=true}}</span>
 {{/link-to}}
 
 {{#link-to "editor.edit" this.post.displayName this.post.id class="permalink gh-list-data gh-post-list-status" title="Edit this post"}}
@@ -55,7 +55,7 @@
 
     {{#if this.post.email}}
     <span data-tooltip="Sent by email" class="gh-content-status-emailed">
-        {{svg-jar "send-email-stroke" class="stroke-midlightgrey-l2"}}
+        {{svg-jar "send-email-stroke" class="stroke-midgrey-l1"}}
     </span>
     {{/if}}
 </div>
