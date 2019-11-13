@@ -17,6 +17,7 @@ export default Component.extend({
     isDraft: equal('post.status', 'draft'),
     isPublished: equal('post.status', 'published'),
     isScheduled: equal('post.status', 'scheduled'),
+    primaryTag: alias('post.primary_tag'),
 
     authorNames: computed('post.authors.[]', function () {
         let authors = this.get('post.authors');
