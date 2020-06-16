@@ -1,6 +1,6 @@
 :root {
     --main-bg-color: rgb(242, 244, 247);
-    --menu-hover-bg-color: color-mod(var(--main-bg-color) s(+8%));
+    --menu-hover-bg-color: color-mod(var(--main-bg-color) l(-1%) s(+8%));
     --active-menu-color: var(--darkgrey);
     --active-menu-bg-color: color-mod(var(--main-bg-color) l(-3%) s(+8%));
 }
@@ -306,7 +306,8 @@
     font-weight: 500;
 }
 
-.gh-nav-list a {
+.gh-nav-list a,
+.gh-nav-list .gh-nav-link {
     display: flex;
     align-items: center;
     padding: 6px 32px;
@@ -324,10 +325,24 @@
     font-weight: 700;
 }
 
-.gh-nav-list a:not(.active):hover {
+.gh-nav-list a:not(.active):hover,
+.gh-nav-list .gh-nav-link:not(.active):hover {
     color: var(--darkgrey);
     background: var(--menu-hover-bg-color);
     opacity: 1;
+}
+
+.gh-nav-list .gh-nav-link {
+    width: 257px;
+}
+
+.gh-nav-list .gh-nav-viewheading {
+    margin-bottom: 1px; /* OCD */
+}
+
+.gh-nav-list .gh-nav-viewheading:not(.active):hover {
+    background: none;
+    color: color-mod(var(--darkgrey) l(-4%));
 }
 
 /* Icons */
@@ -340,7 +355,8 @@
     transition: none;
 }
 
-.gh-nav-list a:not(.active):hover svg {
+.gh-nav-list a:not(.active):hover svg,
+.gh-nav-list .gh-nav-link:not(.active):hover svg {
     fill: var(--darkgrey);
 }
 
@@ -352,7 +368,9 @@
     stroke: var(--midgrey);
 }
 
-.gh-nav-list a:not(.active):hover svg g {
+.gh-nav-list a:not(.active):hover svg g,
+.gh-nav-list .gh-nav-link:not(.active):hover svg g,
+.gh-nav-list .gh-nav-viewheading:not(.active):hover svg.gh-nav-expand-chevron path {
     stroke: var(--darkgrey);
 }
 
@@ -360,23 +378,15 @@
     stroke: var(--active-menu-color);
 }
 
-.gh-nav-button-expand.expanded {
-    padding-left: 9px;
+.gh-nav-list svg.gh-nav-expand-chevron {
+    width: 10px;
+    height: 10px;
+    margin: 0 6px 0 -16px;
 }
 
-.gh-nav-button-expand svg {
-    width: 9px;
-    height: 9px;
-    margin-bottom: 1px;
-}
-
-.gh-nav-button-expand svg path {
+.gh-nav-list svg.gh-nav-expand-chevron path {
     stroke-width: 2.0px;
     stroke: var(--midgrey);
-}
-
-.gh-nav-button-expand:hover svg path {
-    stroke: color-mod(var(--darkgrey) l(-5%));
 }
 
 .gh-nav-list .gh-secondary-action {
